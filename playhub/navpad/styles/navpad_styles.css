@@ -1,0 +1,87 @@
+/*	- Document: CSS for Grid and Nav Pads
+	- Version:  1.1
+	- Author:   Sabarinathan 
+*/
+
+body {
+	margin:10px;
+}
+
+/* Grid Styles 
+	.row - row style of the Grid system
+	.cell - cell style of the Grid system with fixed width and height
+*/
+#gridContainer {
+	margin: 10px;
+	float: left;
+}
+
+.grid .row {
+    display:block;
+    clear:both;
+}
+
+.grid .cell {
+    border-radius: 4px;
+    background-color: #f0f0f0;
+    width: 200px; 
+    height: 200px;
+    margin: 2px;
+    float: left;
+}
+
+.grid .selected {
+    background-color: #000;
+}
+
+
+/*  Nav Pad Styles 
+	.row - row style of the Navigational Pad
+	.navButton - button style of the Navigational Pad with fixed width and height
+*/
+
+#navContainer {
+	margin: 10px;
+	float: left;
+	position: relative;
+	top: 240px;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.navpad {
+    border-radius:2px;
+    width: 200px;
+    height: 100px;
+    display: table-cell;
+    text-align:center;
+}
+
+.navpad .row {
+    display: inline-block;
+    clear:both;
+}
+
+.navpad .navbutton {
+    background-color: #db4a39;
+    border-radius:2px;
+    border: none;
+    outline: none;
+    display: inline-block;
+    background-image: none;
+    color: #fff;
+    font-weight: bold;
+    height: 50px;
+    width: 50px;
+    margin:5px;
+    vertical-align: middle;
+}
+
+.navpad .navbutton:hover {
+    background-color: #000;
+    cursor: pointer;
+}
+
+.navbutton.left, .navbutton.down, .navbutton.right {
+   float: left;
+}
